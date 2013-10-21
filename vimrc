@@ -8,9 +8,11 @@ set guioptions-=T "get rid of toolbar
 set guioptions-=r "get rid of scrollbars
 
 "Color scheme
-set t_Co=256
-colorscheme wombat256mod
-set columns=100 lines=400
+set background=dark
+set t_Co=16
+let g:solarized_termcolors=16
+colorscheme solarized
+"set columns=100 lines=400
 
 "showing line numbers and length
 set number
@@ -51,11 +53,11 @@ vnoremap < <gv
 vnoremap > >gv
 
 "code folding
-"set foldmethod=indent
-"set foldlevel=99
+set foldmethod=indent
+set foldlevel=99
 
 
-set spell
+"set spell
 set history=1000
 set undolevels=700
 
@@ -78,10 +80,11 @@ set noswapfile
 set laststatus=2
 
 "MiniBufExplorer
-let g:miniBufExplMapWindowNavVim=1
-let g:miniBufExplMapWindowNavArrows=1
-let g:miniBufExplMapCTabSwitchBufs=1
-let g:miniBufExplModSelTarget=1
+"let g:miniBufExplMapWindowNavVim=1
+"let g:miniBufExplMapWindowNavArrows=1
+"let g:miniBufExplMapCTabSwitchBufs=1
+"let g:miniBufExplModSelTarget=1
+map <F3> :MiniBufExplorer<cr>
 
 "NERD TREE SETUP
 map <F2> :NERDTreeToggle<cr>
