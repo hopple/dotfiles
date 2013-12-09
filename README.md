@@ -2,5 +2,7 @@
 About this repository
 --------------------------------------------------
 
-This repository is used for storing my personalized VIM configuration and plugins.
+This repository is used for storing my dotfiles.
+
+I use 
 
